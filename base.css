@@ -1,0 +1,15 @@
+:root {
+    --cinza: #2F4F4F;
+    --preto: #000000;
+    --branco: #ffffff;
+
+    --fonte-montserrat: "Montserrat", sans-serif;
+
+}
+
+.container {
+    font-family: var(--fonte-montserrat);
+
+    padding: 2rem 0;
+}
+
