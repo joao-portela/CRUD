@@ -2,6 +2,8 @@
     --cinza: #2F4F4F;
     --preto: #000000;
     --branco: #ffffff;
+    --cinza-escuro: #111C14;
+    --azul-ciano: #296bf94f;
 
     --fonte-montserrat: "Montserrat", sans-serif;
 
@@ -10,6 +12,6 @@
 .container {
     font-family: var(--fonte-montserrat);
 
-    padding: 2rem 0;
+    padding: 1.8rem 2%;
 }
 

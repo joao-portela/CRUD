@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,20 +17,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@345;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="container">
-        <h1 class="nav__titulo">Tela Inicial</h1>
+    <header class="container cabecalho">
+        <h1 class="cabecalho__titulo">Tela Inicial</h1>
+
+        <nav class="cabecalho__nav">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <form action="consulta.php" method="get">
+    <main class="container consulta">
+        <h2>Seleção de Base de Dados</h2>
+        <form class="form__consulta" action="consulta.php" method="get">
             <label for="op">Selecione uma opção para consulta</label> <br>
             <select name="op" id="op">
                 <option value="1">REDE SOCIAL</option>
                 <option value="2">USUÁRIO</option>
-            </select> <br>
-            <button>Enviar</button>
+            </select> 
+            <button class="button__consulta">Enviar</button>
         </form>
-    </div>
+    </main>  
+    
+    <!-- <footer class="container rodape">
+        <ul class="lista__rodape">
+            <li class="item__lista-rodape"><img src="./25231.png" alt="Logo Github"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </footer> -->
 </body>
 </html>
 
